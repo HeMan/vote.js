@@ -1,2 +1,2 @@
 # vote.js
-Node.js project for registering vots
+Node.js project for registering votes.
