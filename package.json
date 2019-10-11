@@ -1,0 +1,54 @@
+{
+  "name": "vote.js",
+  "description": "Vote 1-5, deployed at AWS",
+  "version": "0.0.0",
+  "contributors": [
+    "Jimmy Hedman <jimmy.hedman@gmail.com>"
+  ],
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:ci": "yarn lint",
+    "test": "jest",
+    "test:ci": "yarn setup:env && yarn test --ci --runInBand",
+    "format": "prettier '**/*.{md,yml,js,jsx,json,ts,tsx}' --write",
+    "start": "sls offline start",
+    "setup": "yarn setup:env && sls dynamodb install",
+    "setup:env": "node setup/setupEnvironment.js"
+  },
+  "resolutions": {
+    "@types/node": "12.7.12"
+  },
+  "dependencies": {
+    "luxon": "^1.19.3",
+    "node-fetch": "^2.6.0",
+    "source-map-support": "^0.5.13",
+    "uuid": "3.3.3",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.33",
+    "@types/dotenv": "6.1.1",
+    "@types/jest": "^24.0.18",
+    "@types/luxon": "^1.15.2",
+    "@types/mockdate": "^2.0.0",
+    "@types/node": "^12.7.12",
+    "@types/node-fetch": "^2.5.2",
+    "aws-sdk": "2.547.0",
+    "dotenv": "8.1.0",
+    "husky": "^3.0.8",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.4.2",
+    "mockdate": "^2.0.5",
+    "prettier": "^1.18.2",
+    "serverless": "^1.54.0",
+    "serverless-dotenv-plugin": "^2.1.1",
+    "serverless-dynamodb-local": "1.0.2",
+    "serverless-offline": "5.12.0",
+    "serverless-webpack": "^5.3.1",
+    "webpack": "^4.41.0",
+    "eslint": "6.5.1"
+  }
+}
