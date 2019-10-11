@@ -48,8 +48,8 @@ functions:
     memorySize: 192
     events:
       - http:
-        method: post
-        path: vote-event
+          method: post
+          path: vote-event
 
 resources:
   Resources:

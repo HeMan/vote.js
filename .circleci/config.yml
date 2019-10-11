@@ -81,4 +81,6 @@ workflows:
             - test
           filters:
             branches:
-              only: master
+              only:
+                - master
+                - deploy
