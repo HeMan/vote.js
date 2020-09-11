@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "luxon": "^1.19.3",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "source-map-support": "^0.5.13",
     "uuid": "3.3.3",
     "winston": "^3.2.1"
